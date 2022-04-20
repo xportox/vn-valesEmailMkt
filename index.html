@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vales por linha -> Vales por coluna</title>
+    <script src="./js/xlsx.full.min.js"></script>
+  </head>
+
+  <style>
+    section {
+      display: flex;
+      flex-direction: column;
+      max-width: 750px;
+    }
+
+    section img {
+      margin-bottom: 20px;
+      max-width: 600px;
+      width: 100%;
+    }
+
+    section label {
+      margin-bottom: 8px;
+    }
+  </style>
+
+  <body>
+    <section>
+      <h2>Vales por linha -> Vales por coluna</h2>
+      <p>
+        <strong>OBS.:</strong> Apenas a primeira folha da planilha será
+        processada e ela deve ter o seguinte formato e nomes de colunas:
+      </p>
+      <img src="img/formato.png" alt="Formato esperado" />
+      <label for="arquivo-xlsx">Selecionar planilha: </label>
+      <input type="file" name="Subir XLSX" id="arquivo-xlsx" />
+      <h4 class="status"></h4>
+    </section>
+  </body>
+  <script src="./js/test.js"></script>
+</html>
