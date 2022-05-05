@@ -7,7 +7,7 @@
     arr.forEach((elem, index) => {
       if (
         typeof output[output.length - 1] == "undefined" ||
-        !Object.values(output[output.length - 1]).includes(elem.Email)
+        !output.find(({ Email }) => Email == elem.Email)
       ) {
         let duplicatas = arr
           .filter(({ Email }) => Email == elem.Email)
